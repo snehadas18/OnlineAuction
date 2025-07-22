@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction - Online Auction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Online Auction</h1>
+    <button id="logoutButton">Logout</button>
+  </header>
+
+  <main>
+    <section class="auction-items">
+      <h2>Items for Auction</h2>
+      <div class="item" id="item1">
+        <img src="assets/item1.jpg" alt="Item 1">
+        <h3>Antique Vase</h3>
+        <p>Starting Price: <strong>$100</strong></p>
+        <button onclick="placeBid('item1', 100)">Place Bid</button>
+      </div>
+
+      <div class="item" id="item2">
+        <img src="assets/item2.jpg" alt="Item 2">
+        <h3>Vintage Clock</h3>
+        <p>Starting Price: <strong>$150</strong></p>
+        <button onclick="placeBid('item2', 150)">Place Bid</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Online Auction</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
